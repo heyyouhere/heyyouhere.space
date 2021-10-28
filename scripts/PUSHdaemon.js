@@ -16,8 +16,6 @@ $.getJSON(tokens, function(json){
     ytURL = json.url;
 });
 
-updatePage();
-
 setInterval(() => {
    updatePage();  
 }, 5000);
