@@ -25,5 +25,5 @@ setInterval(() => {
         var text = requestYT.response;
         data = '{ "subs" : '  + text.items[0].statistics.subscriberCount +'}';
         console.log(data);
-        writeFileSync('head.json', data);
+        writeFileSync('subINFO.json', data);
 }}, 10000);
