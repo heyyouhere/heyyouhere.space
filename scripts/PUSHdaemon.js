@@ -13,6 +13,7 @@ let subGoal = document.querySelector(".subgoal");
 let progress = document.querySelector(".progress");
 subGoal.textContent = 10000;
 let doc = "scripts/subINFO.json";
+let tokens = "/scripts/tokens.json"
 
 
 $.getJSON(tokens, function(json){
