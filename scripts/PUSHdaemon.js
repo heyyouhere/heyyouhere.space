@@ -1,6 +1,6 @@
 import '/scripts/node_modules/googleapis/build/src/googleapis.js';
-import '@fs';
-import '@xhr2';
+//import '@fs';
+import '/scripts/node_modules/xhr2/lib/xhr2.js';
 import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
 
 
