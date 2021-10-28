@@ -1,7 +1,8 @@
-import 'googleapis';
-import 'fs';
+import '@googleapis';
+import '@fs';
+import '@xhr2';
 import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
-import 'xhr2';
+
 
 
 
