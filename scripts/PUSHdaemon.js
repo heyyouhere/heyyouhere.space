@@ -1,8 +1,8 @@
-import { verifiedaccess_v1 } from "googleapis";
-import { fstat, writeFile, writeFileSync } from 'fs';
+import 'googleapis';
+import 'fs';
 import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
-import pkg from "xhr2";
-const {XMLHttpRequest} = pkg;
+import 'xhr2';
+
 
 
 var requestYT = new XMLHttpRequest();
