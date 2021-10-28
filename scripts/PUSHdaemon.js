@@ -21,4 +21,5 @@ setInterval(() => {
         console.log(data);
     });
   //  progress.value = Number(data);    
+  console.log(data);
 }, 5000);
