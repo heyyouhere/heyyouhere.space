@@ -17,7 +17,7 @@ $.getJSON(tokens, function(json){
 progress.max = subGoal.textContent;
 setInterval(() => {
     $.getJSON(ytURL, function(ytAnswer){
-        data = '{ "subs" : '  + ytAnswer.items[0].statistics.subscriberCount +'}';
+        data = ytAnswer.items[0].statistics.subscriberCount;
         console.log(data);
     });
     progress.value = Number(data.subs);    
