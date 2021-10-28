@@ -1,7 +1,3 @@
-import 'googleapis';
-import 'xhr2';
-import 'fs';
-
 import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
 
 
@@ -20,14 +16,9 @@ $.getJSON(tokens, function(json){
 
 progress.max = subGoal.textContent;
 setInterval(() => {
-    requestYT.open('GET', ytURL);
-    requestYT.responseType = 'json';
-    requestYT.send();
-    requestYT.onload = function() {
-        var text = requestYT.response;
-        data = '{ "subs" : '  + text.items[0].statistics.subscriberCount +'}';
+    $.getJSON(tokens, function(ytAnswer){
+        data = '{ "subs" : '  + ytAnswer.items[0].statistics.subscriberCount +'}';
         console.log(data);
-    };
-    writeFileSync('subINFO.json', data);
+    });
     progress.value = Number(data.subs);    
 }, 5000);
