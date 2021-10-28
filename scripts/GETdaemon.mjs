@@ -1,17 +1,24 @@
 import { verifiedaccess_v1 } from "googleapis";
 import { fstat, writeFile, writeFileSync } from 'fs';
+
+import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
 import pkg from "xhr2";
+
 const {XMLHttpRequest} = pkg;
 
 
 
-var youtubeURL = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCK_28SKuADbZvrl9QxTyEMA&key=AIzaSyApBZVrP8yHUXDOwCZlu1N2-EJs7qn-DXU';
+var tokens = '/tokens.json';
 var requestYT = new XMLHttpRequest();
 var data;
+var ytURL;
 
+$.getJSON(tokens, function(json){
+    ytURL = json.token;
+});
 
 setInterval(() => {
-    requestYT.open('GET', youtubeURL);
+    requestYT.open('GET', );
     requestYT.responseType = 'json';
     requestYT.send();
     requestYT.onload = function() {

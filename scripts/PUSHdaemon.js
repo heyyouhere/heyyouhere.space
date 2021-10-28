@@ -4,7 +4,7 @@ let subs = document.querySelector(".subs");
 let subGoal = document.querySelector(".subgoal");
 let progress = document.querySelector(".progress");
 subGoal.textContent = 10000;
-let doc = "http://127.0.0.1:8080/head.json";
+let doc = "/scripts/subINFO.json";
 
 progress.max = subGoal.textContent;
 setInterval(() => {
