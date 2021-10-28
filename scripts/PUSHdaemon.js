@@ -20,6 +20,5 @@ setInterval(() => {
         data = ytAnswer.items[0].statistics.subscriberCount;
         console.log(data);
     });
-  //  progress.value = Number(data);    
-  console.log(data);
+    progress.value = Number(data);    
 }, 5000);
