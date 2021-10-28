@@ -1,7 +1,7 @@
-import '/scripts/node_modules/googleapis/build/src/googleapis.js';
+import '/scripts/node_modules/googleapis';
 //import './fs';
 import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
-import '/scripts/node_modules/xhr2/lib/xhr2.js';
+import '/scripts/node_modules/xhr2';
 
 
 
