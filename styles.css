@@ -1,0 +1,36 @@
+body {
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.progress {
+    position: relative;
+}
+.subs {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 10px;
+}
+.subgoal {
+    position: absolute;
+    z-index: 2;
+    top: 60px;
+    left: 256px;
+}
+.progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.progress[value]::-webkit-progress-bar {
+    width: 300px;
+    height: 50px;
+    background-color: tomato;
+    border-radius: 5px;
+}
+.progress[value]::-webkit-progress-value {
+    background-color: lime;
+    border-radius: 5px;
+
+}
