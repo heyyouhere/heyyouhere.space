@@ -1,7 +1,7 @@
 import { verifiedaccess_v1 } from "/node_modules/googleapis";
 import { fstat, writeFile, writeFileSync } from '/node_modules/fs';
 import 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js';
-import pkg from "xhr2";
+import pkg from "/node_modules/xhr2";
 const {XMLHttpRequest} = pkg;
 
 
