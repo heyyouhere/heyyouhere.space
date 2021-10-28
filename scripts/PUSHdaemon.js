@@ -11,7 +11,7 @@ let tokens = "/scripts/tokens.json"
 
 
 $.getJSON(tokens, function(json){
-    ytURL = json.token;
+    ytURL = json.url;
 });
 
 progress.max = subGoal.textContent;
